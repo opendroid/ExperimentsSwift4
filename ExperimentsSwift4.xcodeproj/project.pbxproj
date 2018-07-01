@@ -29,6 +29,7 @@
 		F752A10B1FA5426D00B5EF3E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F752A1141FA542C900B5EF3E /* ForestNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestNode.swift; sourceTree = "<group>"; };
 		F752A1171FA54D5900B5EF3E /* N_ary_tree_strings.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = N_ary_tree_strings.jpg; sourceTree = "<group>"; };
+		F75C501C20E8542400FBB12D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F76B35AC1FA583CC00C67ADE /* N_ary_tree_ints.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = N_ary_tree_ints.jpg; sourceTree = "<group>"; };
 		F76B35AD1FA5877500C67ADE /* BSTNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTNode.swift; sourceTree = "<group>"; };
 		F76B35B01FA5A00C00C67ADE /* BSTInt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BSTInt.jpg; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 		F752A0FF1FA5426C00B5EF3E = {
 			isa = PBXGroup;
 			children = (
+				F75C501C20E8542400FBB12D /* README.md */,
 				F752A10A1FA5426D00B5EF3E /* ExperimentsSwift4 */,
 				F752A1091FA5426D00B5EF3E /* Products */,
 			);

@@ -6,20 +6,21 @@
 //  Copyright © 2017 Ajay Thakur. All rights reserved.
 //
 
-
-// Terminology:
-//  Binary tree:
-//  Binary search tree (BST):
-//      left node <= current node. right node > current node
-//      rigt node < current node
-//  Balanced tree (AVL tree): "a tree is balanced of each sub-tree is balanced and the height
-//          of the two sub-trees differ by at most one
-//  BalanceFactor(N) := Height(RightSubtree(N)) - Height(LeftSubtree(N))
-//  BalanceFactor(N) ∈ {–1,0,+1}
-//  Question: How to balance a tree
 import Foundation
 
-// BSTNode: An unbalanced BST
+/**
+ BSTNode: An unbalanced BST
+ 
+ Terminology:
+ 1. Binary tree
+ 1. Binary search tree (BST)
+ 1. Balanced tree (AVL tree): a tree is balanced of each sub-tree is balanced and the height
+   of the two sub-trees differ by at most one
+ 1. BalanceFactor(N) `:= Height(RightSubtree(N)) - Height(LeftSubtree(N))`
+ 1. BalanceFactor(N) `∈ {–1,0,+1}`
+ 
+ Question: How to balance a tree
+*/
 class BSTNode<T>{
     let value: T
     var left: BSTNode?
@@ -29,26 +30,35 @@ class BSTNode<T>{
         self.value = value
     }
     
+    /**
+     Return height of a BST
+     - Parameter Void: None
+     - Returns: Height of the BST
+     */
     func height() -> Int {
         var leftHeight: Int
-        var righHeight: Int
+        var rightHeight: Int
         if let leftNode = left {
             leftHeight = 1 + leftNode.height()
         } else {
             leftHeight = 0
         }
         if let rightNode = right {
-            righHeight = 1 + rightNode.height()
+            rightHeight = 1 + rightNode.height()
         } else {
-            righHeight = 0
+            rightHeight = 0
         }
         
-        return max(leftHeight, righHeight)
+        return max(leftHeight, rightHeight)
     }
 }
 
-// Print Noce: { leftNode: {..,..}, rightNode: {..,..}}
 extension BSTNode: CustomStringConvertible {
+    /**
+     All nodes of a BST in format
+     
+     `{ leftNode: {..,..}, rightNode: {..,..}}`
+     */
     var description: String {
         var text = "\(value)"
         if let lNode = left {
@@ -61,8 +71,12 @@ extension BSTNode: CustomStringConvertible {
     }
 }
 
-// Insert a node in a BST
+/**
+ - Extend a BSTNode to `insert` a node
+ - Implement protocol comparable
+ */
 extension BSTNode where T: Comparable {
+    //: Check if nodes are equal
     static func == (lhs: BSTNode, rhs: BSTNode) -> Bool {
         return lhs.value == rhs.value
     }
@@ -73,6 +87,14 @@ extension BSTNode where T: Comparable {
     
     static func < (lhs: BSTNode, rhs: BSTNode) -> Bool {
         return lhs.value < rhs.value
+    }
+    
+    static func >= (lhs: BSTNode, rhs: BSTNode) -> Bool {
+        return lhs.value >= rhs.value
+    }
+    
+    static func <= (lhs: BSTNode, rhs: BSTNode) -> Bool {
+        return lhs.value <= rhs.value
     }
     
     func insert(node: BSTNode) {

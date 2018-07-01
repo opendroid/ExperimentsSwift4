@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F752A10C1FA5426D00B5EF3E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F752A10B1FA5426D00B5EF3E /* main.swift */; };
 		F752A1151FA542C900B5EF3E /* ForestNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F752A1141FA542C900B5EF3E /* ForestNode.swift */; };
+		F75C502220E970D200FBB12D /* NamedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75C502120E970D200FBB12D /* NamedShape.swift */; };
+		F75C502420E9728E00FBB12D /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75C502320E9728E00FBB12D /* Square.swift */; };
+		F75C502620E9781A00FBB12D /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75C502520E9781A00FBB12D /* Circle.swift */; };
+		F75C502820E97D9600FBB12D /* ShapeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75C502720E97D9600FBB12D /* ShapeType.swift */; };
 		F76B35AE1FA5877500C67ADE /* BSTNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76B35AD1FA5877500C67ADE /* BSTNode.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +34,10 @@
 		F752A1141FA542C900B5EF3E /* ForestNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestNode.swift; sourceTree = "<group>"; };
 		F752A1171FA54D5900B5EF3E /* N_ary_tree_strings.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = N_ary_tree_strings.jpg; sourceTree = "<group>"; };
 		F75C501C20E8542400FBB12D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F75C502120E970D200FBB12D /* NamedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedShape.swift; sourceTree = "<group>"; };
+		F75C502320E9728E00FBB12D /* Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+		F75C502520E9781A00FBB12D /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		F75C502720E97D9600FBB12D /* ShapeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeType.swift; sourceTree = "<group>"; };
 		F76B35AC1FA583CC00C67ADE /* N_ary_tree_ints.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = N_ary_tree_ints.jpg; sourceTree = "<group>"; };
 		F76B35AD1FA5877500C67ADE /* BSTNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTNode.swift; sourceTree = "<group>"; };
 		F76B35B01FA5A00C00C67ADE /* BSTInt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BSTInt.jpg; sourceTree = "<group>"; };
@@ -70,6 +78,10 @@
 				F752A10B1FA5426D00B5EF3E /* main.swift */,
 				F752A1141FA542C900B5EF3E /* ForestNode.swift */,
 				F76B35AD1FA5877500C67ADE /* BSTNode.swift */,
+				F75C502120E970D200FBB12D /* NamedShape.swift */,
+				F75C502320E9728E00FBB12D /* Square.swift */,
+				F75C502520E9781A00FBB12D /* Circle.swift */,
+				F75C502720E97D9600FBB12D /* ShapeType.swift */,
 			);
 			path = ExperimentsSwift4;
 			sourceTree = "<group>";
@@ -142,9 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F75C502420E9728E00FBB12D /* Square.swift in Sources */,
 				F76B35AE1FA5877500C67ADE /* BSTNode.swift in Sources */,
+				F75C502220E970D200FBB12D /* NamedShape.swift in Sources */,
 				F752A10C1FA5426D00B5EF3E /* main.swift in Sources */,
 				F752A1151FA542C900B5EF3E /* ForestNode.swift in Sources */,
+				F75C502820E97D9600FBB12D /* ShapeType.swift in Sources */,
+				F75C502620E9781A00FBB12D /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

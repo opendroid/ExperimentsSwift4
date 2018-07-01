@@ -10,7 +10,7 @@ import Foundation
 
 print("Hello, World!")
 
-// Build N_ary_tree.jpgfor String
+//: Build N_ary_tree.jpgfor String
 let a = ForestNode(value: "A")
 let d = ForestNode(value: "D"); a.add(child: d); let b = ForestNode(value: "B"); a.add(child: b)
 let c = ForestNode(value: "C"); a.add(child: c)
@@ -119,4 +119,10 @@ root.insert(node: bi21); root.insert(node: bi22)
 print("BST:\(root)")
 print("BST height:\(root.height())")
 
+// Test Squares
+let sq1 = Square(sideLength: 5.2, name: "Square 1")
+print("Square 1: Area: \(sq1.area()), \(sq1.simpleDescription()). Perimeter: \(sq1.perimeter)")
 
+// Enums
+var triangleShapeType = ShapeType.triangle
+print("Shape type = \(triangleShapeType.simpleDescrption()), raw value=\(triangleShapeType.rawValue)")
